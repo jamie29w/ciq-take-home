@@ -17,8 +17,8 @@ You may use whatever styling method you are most comfortable with. The CSS modul
 
 ## Extra Credit
 
-- Complete the `ServerLogEntry` type in `models/ServerLogEntry.ts`
-- Ensure all variables in your code are fully and correctly typed
+- [x] Complete the `ServerLogEntry` type in `models/ServerLogEntry.ts`
+- [ ] Ensure all variables in your code are fully and correctly typed
 
 # Getting Started
 
@@ -52,22 +52,30 @@ The `pages/api` directory is mapped to `/api/*`. Files in this directory are tre
 
 First of all, this was a fun project. Thanks for inviting me to take part in it. I was introduced to AG Grid this week and thought it would be the right kind of project to try it out on.
 
-With more time, I would have liked to leverage more of the built-in filter and formatting capabilities. But I wanted to hit the specs I could in the 1-2 hour range. I also would have like to add more testing to this.
+With more time, I would have liked to leverage more of the built-in filter and formatting capabilities. But I wanted to hit the specs I could in the 1-2 hour range. I also would have like to add more tests to this. As it was, I had some trouble configure React Testing Library to work with Next.js.
 
 ## Assumptions
 
-What assumptions did you make while completing the test? Were there any questions you would have asked in a real-world scenario?
+<!-- What assumptions did you make while completing the test? Were there any questions you would have asked in a real-world scenario? -->
 
 -
+
+I would have spoken with the designer about the filtering functionalities. Could the uploads of a certain size have been handled by the grid itself, or did that need to be presented on the screen at all times? Same with the user and date range filtering (which I started but didn't complete).
 
 ## Thoughts
 
-If you'd like to share any high-level thoughts or explain any decisions, feel free!
+<!-- If you'd like to share any high-level thoughts or explain any decisions, feel free! -->
 
 -
+
+TS generics are something I'd like to become more familiar with, and I expect we'd use those for our http requests, applying a particular `data` shape for different kinds of requests.
 
 ## Improvements / Scaling
 
 Given more time, what would you change to make things production ready or add that next level of polish?
 
 -
+
+As mentioned above, in a larger project, I'd spend the time building out types and generics. In more mature projects I typically configure testing React-Testing-Library utilities, like an overloaded `render` that is imported from `test-utils`. This customized `render` applies an `<AllTheProviders/>` wrapper, which renders all components with the context at the top level of the app. I also like to expose overrides to the Redux store or context to enable the UI to present the way it's expected to without excessive mocking.
+
+From a data perspective, I'd want to make sure we're handling dates consistently across the APIs and UIs and create helpers to ensure presentation is consistent and filtering is manageable.
