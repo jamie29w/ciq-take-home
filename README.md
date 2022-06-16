@@ -10,9 +10,9 @@ You may use whatever styling method you are most comfortable with. The CSS modul
 
 ## User Stories
 
-- [ ] As a user, I want to view the access logs of the server.
-- [ ] As a user, I want to find out how many unique users have accessed the server.
-- [ ] As a user, I want to find out how many uploads larger than a specified size have happened.
+- [x] As a user, I want to view the access logs of the server.
+- [x] As a user, I want to find out how many unique users have accessed the server.
+- [x] As a user, I want to find out how many uploads larger than a specified size have happened.
 - [ ] As a user, I want to view a summary of a user's interactions with the server within a specified time frame
 
 ## Extra Credit
@@ -48,7 +48,11 @@ The `pages/api` directory is mapped to `/api/*`. Files in this directory are tre
 
 # Your Notes
 
-This space is intended for you to provide some insight into your thought process and approach.
+<!-- This space is intended for you to provide some insight into your thought process and approach. -->
+
+First of all, this was a fun project. Thanks for inviting me to take part in it. I was introduced to AG Grid this week and thought it would be the right kind of project to try it out on.
+
+With more time, I would have liked to leverage more of the built-in filter and formatting capabilities. But I wanted to hit the specs I could in the 1-2 hour range. I also would have like to add more testing to this.
 
 ## Assumptions
 
